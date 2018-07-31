@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option java_package = "logger.com";
+option java_outer_classname = "LogDefinition";
+
+package logger;
+
+message Log {
+	required int64 timestamp = 1;
+	required int32 userId = 2;
+	required string event = 3;
+}
+	
